@@ -1,7 +1,9 @@
 CC = CC
-FLAGS = -Wall -Werror -Wextra -std=c++98 -I
+FLAGS = -Wall -Werror -Wextra -std=c++98
 NAME = phonebook
-SOURCES = phonebook.cpp
+SOURCES = Phonebook.cpp\
+			Contact.cpp\
+			main.cpp\
 
 OBJECTS = $(SOURCES:%.cpp=%.o)
 

@@ -1,5 +1,5 @@
 CC = CC
-FLAGS = -Wall -Werror -Wextra -std=c++98 -I
+FLAGS = -Wall -Werror -Wextra -std=c++98
 NAME = megaphone
 SOURCES = megaphone.cpp
 

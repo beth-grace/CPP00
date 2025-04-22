@@ -1,15 +1,15 @@
 #include <iostream>
 #include <stdlib.h>
 
-char    cap(char *arg)
+char    *cap(char *arg)
 {
     int index = 0;
     while(arg[index] != '\0')
     {
-        toupper(arg[index])
+        arg[index] = toupper(arg[index]);
         index++;
     }
-    return (&arg);
+    return (arg);
 
 }
 int main(int argc, char **argv)
@@ -20,10 +20,11 @@ int main(int argc, char **argv)
         std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
         return (0);
     }
-    while(argc)
+    while (index < argc)
     {
-        std::cout << cap(argv[index]) << std::endl;
+        std::cout << cap(argv[index]) << ' ';
         index++;
     }
+    std::cout << std::endl;
     return (0);
 }
