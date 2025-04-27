@@ -8,7 +8,7 @@ int main(void)
 
     while (1)
     {
-        std::cout << std::endl << "YOU ARE IN THE PHONE BOOK. ACTIONS: ADD/SEARCH/EXIT" << std::endl << "ENTER AN ACTION:  ";
+        std::cout << std::endl << "YOU ARE IN THE PHONE BOOK. ACTIONS: ADD/SEARCH/EXIT \n ENTER AN ACTION:  " << std::flush;
         std::getline(std::cin, input);
         if (input == "ADD")
             phonebook.addContact();

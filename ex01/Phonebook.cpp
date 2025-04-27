@@ -22,12 +22,12 @@ void Phonebook::addContact()
 
 void Phonebook::listPhonebook()
 {
-    std::cout << std::endl << "*********************************************" << std::endl;
-    std::cout << "|   INDEX  |FIRST NAME|LAST NAME | NICKNAME |" << std::endl;
-    std::cout << "*********************************************" << std::endl;
+    std::cout    << "\n *********************************************"
+                 << "\n |   INDEX  |FIRST NAME|LAST NAME | NICKNAME |" 
+                 << "\n *********************************************" << std::endl;
 
     if(_num_entries  < 1)
-        std::cout << std::endl << " ** ERROR: NO CONTACTS ** " << std::endl;
+        std::cout << "\n ** ERROR: NO CONTACTS ** " << std::endl;
  
     for(int i = 0; i < _max_contacts; ++i)
     {
@@ -67,10 +67,10 @@ void    Phonebook::searchContact()
         std::cout << "INVALID INPUT." << std::endl;
         return ;
     }
-    std::cout << std::endl << "**  CONTACT INFORMATION FOR INDEX:  " << input << "  **"<< std::endl;
-    std::cout << "FIRST NAME:     " << _contact[atoi(input.c_str())].getFirstName() << std::endl;
-    std::cout << "LAST NAME:      " << _contact[atoi(input.c_str())].getLastName() << std::endl;
-    std::cout << "NICKNAME:       " << _contact[atoi(input.c_str())].getNickname() << std::endl;
-    std::cout << "PHONE NUMBER:   " << _contact[atoi(input.c_str())].getPhone() << std::endl;
-    std::cout << "DARKEST SECRET: " << _contact[atoi(input.c_str())].getSecret() << std::endl << std::endl;
+    std::cout << std::endl << "**  CONTACT INFORMATION FOR INDEX:  " << input << "  **"
+                 << "\n FIRST NAME:     " << _contact[atoi(input.c_str())].getFirstName()
+                 << "\n LAST NAME:      " << _contact[atoi(input.c_str())].getLastName()
+                 << "\n NICKNAME:       " << _contact[atoi(input.c_str())].getNickname()
+                 << "\n PHONE NUMBER:   " << _contact[atoi(input.c_str())].getPhone()
+                 << "\n DARKEST SECRET: " << _contact[atoi(input.c_str())].getSecret() << "\n" << std::endl;
 }
